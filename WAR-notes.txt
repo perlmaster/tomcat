@@ -1,0 +1,56 @@
+
+
+C:\barry\tomcat>jar -tvf sample.war
+     0 Mon Jul 30 17:18:12 CST 2007 META-INF/
+   106 Mon Jul 30 17:18:10 CST 2007 META-INF/MANIFEST.MF
+     0 Mon Jul 30 16:26:28 CST 2007 WEB-INF/
+     0 Mon Jul 30 16:26:30 CST 2007 WEB-INF/classes/
+     0 Mon Jul 30 16:26:30 CST 2007 WEB-INF/classes/mypackage/
+     0 Mon Jul 30 16:26:28 CST 2007 WEB-INF/lib/
+     0 Mon Jul 30 16:26:28 CST 2007 images/
+  1480 Mon Jul 30 16:26:30 CST 2007 WEB-INF/classes/mypackage/Hello.class
+   813 Mon Jul 30 16:26:28 CST 2007 WEB-INF/web.xml
+   376 Mon Jul 30 16:26:28 CST 2007 hello.jsp
+  1441 Mon Jul 30 16:26:28 CST 2007 images/tomcat.gif
+   636 Mon Jul 30 16:26:28 CST 2007 index.html
+
+C:\barry\tomcat>
+
+
+https://www.javatpoint.com/war-file
+
+War File
+--------
+
+A war (web archive) File contains files of a web project.
+It may have servlet, xml, jsp, image, html, css, js etc. files.
+
+Here, we will discuss what is war file, how to create war file, how to deploy war file and
+how to extract war file.
+
+What is war file?
+----------------
+
+web archive (war) file contains all the contents of a web application.
+It reduces the time duration for transferring file.
+
+Advantage of war file
+---------------------
+
+saves time: The war file combines all the files into a single unit.
+So it takes less time while transferring file from client to server.
+
+How to create war file?
+----------------------
+
+To create war file, you need to use jar tool of JDK. You need to use -c switch of jar, to create the war file.
+
+Go inside the project directory of your project (outside the WEB-INF), then write the following command:
+
+jar -cvf projectname.war *
+
+Here, -c is used to create file, -v to generate the verbose output and -f to specify the
+arhive file name.
+
+The * (asterisk) symbol signifies that all the files of this directory (including sub directory).
+
